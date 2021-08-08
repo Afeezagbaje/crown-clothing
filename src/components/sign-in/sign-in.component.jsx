@@ -16,19 +16,20 @@ export class SignIn extends Component {
             email: '',
             password: '',
         }
-
-        const handleSubmit = e => {
-            e.preventDefault();
-
-            this.setState({ email: '', password: '' })
-        }
-
-        const handleChange = e => {
-            const { value, name } = e.target;
-
-            this.setState({ [name]: value })
-        }
     }
+
+    handleSubmit = e => {
+        e.preventDefault();
+
+        this.setState({ email: '', password: '' })
+    }
+
+    handleChange = e => {
+        const { value, name } = e.target;
+
+        this.setState({ [name]: value })
+    }
+    
     
     render() {
         return (
